@@ -5,6 +5,7 @@ Resource  resources.robot
 Resource  test_validate.robot
 Resource  test_unvalidate.robot
 Resource  test_resource_employees.robot
+Resource  test_resource_projects.robot
 
 *** Test Cases ***
 Open Browser To Login Page Test
@@ -18,3 +19,6 @@ Test Valid Login On Page
 
 Test Resource Employees
     Test Resource Employees
+
+Test Resource Projects
+    Test Resource Projects

@@ -17,6 +17,9 @@ Open Browser To Login Page
 Login Page Should Be Open
     Location Should Be  ${LOGIN URL}
 
+Login To Site
+    Login Site  Marcin  Qwerty12!
+
 Login Site
     [Arguments]  ${username}  ${password}
     Input Text  id=exampleInputEmail2  ${username}
