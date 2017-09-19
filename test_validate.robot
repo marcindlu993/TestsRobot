@@ -10,7 +10,7 @@ Test Valid Login
     Logout From Site
 
 Open Browser And Valid Test
-    Open Browser To Login Page
+#    Open Browser To Login Page
     Login Page Should Be Open
     Login Site  Marcin  Qwerty12!
     Sleep  0.1

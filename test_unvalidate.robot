@@ -6,7 +6,7 @@ Resource  resources.robot
 
 *** Keywords ***
 Test Unvalid Logins
-    Open Browser To Invalid Test
+#    Open Browser To Invalid Test
     Input Invalid Both
     Input Invalid Password
     Input Invalid Username
