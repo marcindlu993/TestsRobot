@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20170919 09:44:45.536" generator="Robot 3.0.2 (Python 2.7.8 on win32)">
+<suite source="C:\Users\Hehesz\PycharmProjects\untitled\billennium_resources\test_validate.robot" id="s1" name="Test Validate">
+<test id="s1-t1" name="Test Valid Login">
+<kw name="Open Browser And Valid Test">
+<kw name="Open Browser To Login Page" library="resources">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>${SERVER}</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20170919 09:44:45.668" level="INFO">Opening browser 'chrome' to base url 'http://127.0.0.1:8080'</msg>
+<status status="PASS" endtime="20170919 09:44:49.519" starttime="20170919 09:44:45.668"></status>
+</kw>
+<kw name="Maximize Browser Window" library="Selenium2Library">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20170919 09:44:50.662" starttime="20170919 09:44:49.519"></status>
+</kw>
+<kw name="Login Page Should Be Open" library="resources">
+<kw name="Location Should Be" library="Selenium2Library">
+<doc>Verifies that current URL is exactly `url`.</doc>
+<arguments>
+<arg>${LOGIN URL}</arg>
+</arguments>
+<msg timestamp="20170919 09:44:50.662" level="INFO">Current location is 'http://127.0.0.1:8080/#!/signInView'.</msg>
+<status status="PASS" endtime="20170919 09:44:50.662" starttime="20170919 09:44:50.662"></status>
+</kw>
+<status status="PASS" endtime="20170919 09:44:50.662" starttime="20170919 09:44:50.662"></status>
+</kw>
+<status status="PASS" endtime="20170919 09:44:50.662" starttime="20170919 09:44:45.668"></status>
+</kw>
+<kw name="Login Page Should Be Open" library="resources">
+<kw name="Location Should Be" library="Selenium2Library">
+<doc>Verifies that current URL is exactly `url`.</doc>
+<arguments>
+<arg>${LOGIN URL}</arg>
+</arguments>
+<msg timestamp="20170919 09:44:50.677" level="INFO">Current location is 'http://127.0.0.1:8080/#!/signInView'.</msg>
+<status status="PASS" endtime="20170919 09:44:50.677" starttime="20170919 09:44:50.662"></status>
+</kw>
+<status status="PASS" endtime="20170919 09:44:50.677" starttime="20170919 09:44:50.662"></status>
+</kw>
+<kw name="Login Site" library="resources">
+<arguments>
+<arg>Marcin</arg>
+<arg>Qwerty12!</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>id=exampleInputEmail2</arg>
+<arg>${username}</arg>
+</arguments>
+<msg timestamp="20170919 09:44:50.677" level="INFO">Typing text 'Marcin' into text field 'id=exampleInputEmail2'</msg>
+<status status="PASS" endtime="20170919 09:44:50.802" starttime="20170919 09:44:50.677"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>id=exampleInputPassword2</arg>
+<arg>${password}</arg>
+</arguments>
+<msg timestamp="20170919 09:44:50.802" level="INFO">Typing text 'Qwerty12!' into text field 'id=exampleInputPassword2'</msg>
+<status status="PASS" endtime="20170919 09:44:50.904" starttime="20170919 09:44:50.802"></status>
+</kw>
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>css=body &gt; div.col-12.col-md-10.col-xl-8.py-md-3.pl-md-5.bd-content.ng-scope &gt; div.col-md-offset-4.ng-scope &gt; form &gt; button</arg>
+</arguments>
+<msg timestamp="20170919 09:44:50.905" level="INFO">Clicking button 'css=body &gt; div.col-12.col-md-10.col-xl-8.py-md-3.pl-md-5.bd-content.ng-scope &gt; div.col-md-offset-4.ng-scope &gt; form &gt; button'.</msg>
+<status status="PASS" endtime="20170919 09:44:50.989" starttime="20170919 09:44:50.905"></status>
+</kw>
+<status status="PASS" endtime="20170919 09:44:50.989" starttime="20170919 09:44:50.677"></status>
+</kw>
+<kw name="Timesheet Page Should Be Open" library="resources">
+<kw name="Location Should Be" library="Selenium2Library">
+<doc>Verifies that current URL is exactly `url`.</doc>
+<arguments>
+<arg>${SERVER}/#!/Timesheet</arg>
+</arguments>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20170919 09:44:51.338" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20170919 09:44:51.338" starttime="20170919 09:44:50.994"></status>
+</kw>
+<msg timestamp="20170919 09:44:51.338" level="FAIL">Location should have been 'http://127.0.0.1:8080/#!/Timesheet' but was 'http://127.0.0.1:8080/#!/signInView'</msg>
+<status status="FAIL" endtime="20170919 09:44:51.338" starttime="20170919 09:44:50.990"></status>
+</kw>
+<status status="FAIL" endtime="20170919 09:44:51.338" starttime="20170919 09:44:50.990"></status>
+</kw>
+<status status="FAIL" endtime="20170919 09:44:51.338" starttime="20170919 09:44:45.668"></status>
+</kw>
+<status status="FAIL" endtime="20170919 09:44:51.338" critical="yes" starttime="20170919 09:44:45.668">Location should have been 'http://127.0.0.1:8080/#!/Timesheet' but was 'http://127.0.0.1:8080/#!/signInView'</status>
+</test>
+<doc>Main test program checking login page</doc>
+<status status="FAIL" endtime="20170919 09:44:51.338" starttime="20170919 09:44:45.536"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="1" pass="0">Critical Tests</stat>
+<stat fail="1" pass="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="1" id="s1" name="Test Validate" pass="0">Test Validate</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
