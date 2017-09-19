@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generated="20170919 09:44:45.536" generator="Robot 3.0.2 (Python 2.7.8 on win32)">
-<suite source="C:\Users\Hehesz\PycharmProjects\untitled\billennium_resources\test_validate.robot" id="s1" name="Test Validate">
-<test id="s1-t1" name="Test Valid Login">
-<kw name="Open Browser And Valid Test">
+<robot generated="20170919 12:32:16.137" generator="Robot 3.0.2 (Python 2.7.8 on win32)">
+<suite source="C:\Users\Hehesz\PycharmProjects\untitled\billennium_resources\Test_site.robot" id="s1" name="Test site">
+<test id="s1-t1" name="Open Browser To Login Page Test">
 <kw name="Open Browser To Login Page" library="resources">
 <kw name="Open Browser" library="Selenium2Library">
 <doc>Opens a new browser instance to given URL.</doc>
@@ -10,12 +9,12 @@
 <arg>${SERVER}</arg>
 <arg>${BROWSER}</arg>
 </arguments>
-<msg timestamp="20170919 09:44:45.668" level="INFO">Opening browser 'chrome' to base url 'http://127.0.0.1:8080'</msg>
-<status status="PASS" endtime="20170919 09:44:49.519" starttime="20170919 09:44:45.668"></status>
+<msg timestamp="20170919 12:32:16.284" level="INFO">Opening browser 'chrome' to base url 'http://127.0.0.1:8080'</msg>
+<status status="PASS" endtime="20170919 12:32:20.137" starttime="20170919 12:32:16.284"></status>
 </kw>
 <kw name="Maximize Browser Window" library="Selenium2Library">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" endtime="20170919 09:44:50.662" starttime="20170919 09:44:49.519"></status>
+<status status="PASS" endtime="20170919 12:32:21.279" starttime="20170919 12:32:20.137"></status>
 </kw>
 <kw name="Login Page Should Be Open" library="resources">
 <kw name="Location Should Be" library="Selenium2Library">
@@ -23,23 +22,175 @@
 <arguments>
 <arg>${LOGIN URL}</arg>
 </arguments>
-<msg timestamp="20170919 09:44:50.662" level="INFO">Current location is 'http://127.0.0.1:8080/#!/signInView'.</msg>
-<status status="PASS" endtime="20170919 09:44:50.662" starttime="20170919 09:44:50.662"></status>
+<msg timestamp="20170919 12:32:21.279" level="INFO">Current location is 'http://127.0.0.1:8080/#!/signInView'.</msg>
+<status status="PASS" endtime="20170919 12:32:21.279" starttime="20170919 12:32:21.279"></status>
 </kw>
-<status status="PASS" endtime="20170919 09:44:50.662" starttime="20170919 09:44:50.662"></status>
+<status status="PASS" endtime="20170919 12:32:21.279" starttime="20170919 12:32:21.279"></status>
 </kw>
-<status status="PASS" endtime="20170919 09:44:50.662" starttime="20170919 09:44:45.668"></status>
+<status status="PASS" endtime="20170919 12:32:21.279" starttime="20170919 12:32:16.284"></status>
 </kw>
+<status status="PASS" endtime="20170919 12:32:21.279" critical="yes" starttime="20170919 12:32:16.269"></status>
+</test>
+<test id="s1-t2" name="Test Unvalid Logins On Page">
+<kw name="Test Unvalid Logins" library="test_unvalidate">
+<kw name="Input Invalid Both" library="test_unvalidate">
+<kw name="Login Site" library="resources">
+<arguments>
+<arg>unvalid</arg>
+<arg>unvalid</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>id=exampleInputEmail2</arg>
+<arg>${username}</arg>
+</arguments>
+<msg timestamp="20170919 12:32:21.295" level="INFO">Typing text 'unvalid' into text field 'id=exampleInputEmail2'</msg>
+<status status="PASS" endtime="20170919 12:32:21.423" starttime="20170919 12:32:21.295"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>id=exampleInputPassword2</arg>
+<arg>${password}</arg>
+</arguments>
+<msg timestamp="20170919 12:32:21.423" level="INFO">Typing text 'unvalid' into text field 'id=exampleInputPassword2'</msg>
+<status status="PASS" endtime="20170919 12:32:21.513" starttime="20170919 12:32:21.423"></status>
+</kw>
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>css=body &gt; div.col-12.col-md-10.col-xl-8.py-md-3.pl-md-5.bd-content.ng-scope &gt; div.col-md-offset-4.ng-scope &gt; form &gt; button</arg>
+</arguments>
+<msg timestamp="20170919 12:32:21.513" level="INFO">Clicking button 'css=body &gt; div.col-12.col-md-10.col-xl-8.py-md-3.pl-md-5.bd-content.ng-scope &gt; div.col-md-offset-4.ng-scope &gt; form &gt; button'.</msg>
+<status status="PASS" endtime="20170919 12:32:21.606" starttime="20170919 12:32:21.513"></status>
+</kw>
+<status status="PASS" endtime="20170919 12:32:21.606" starttime="20170919 12:32:21.295"></status>
+</kw>
+<kw name="Signin Location Should Be Open" library="resources">
+<kw name="Location Should Be" library="Selenium2Library">
+<doc>Verifies that current URL is exactly `url`.</doc>
+<arguments>
+<arg>${SERVER}/#!/signInView</arg>
+</arguments>
+<msg timestamp="20170919 12:32:21.613" level="INFO">Current location is 'http://127.0.0.1:8080/#!/signInView'.</msg>
+<status status="PASS" endtime="20170919 12:32:21.613" starttime="20170919 12:32:21.607"></status>
+</kw>
+<status status="PASS" endtime="20170919 12:32:21.613" starttime="20170919 12:32:21.606"></status>
+</kw>
+<status status="PASS" endtime="20170919 12:32:21.613" starttime="20170919 12:32:21.295"></status>
+</kw>
+<kw name="Input Invalid Password" library="test_unvalidate">
+<kw name="Login Site" library="resources">
+<arguments>
+<arg>Marcin</arg>
+<arg>unvalid</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>id=exampleInputEmail2</arg>
+<arg>${username}</arg>
+</arguments>
+<msg timestamp="20170919 12:32:21.616" level="INFO">Typing text 'Marcin' into text field 'id=exampleInputEmail2'</msg>
+<status status="PASS" endtime="20170919 12:32:21.660" starttime="20170919 12:32:21.616"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>id=exampleInputPassword2</arg>
+<arg>${password}</arg>
+</arguments>
+<msg timestamp="20170919 12:32:21.660" level="INFO">Typing text 'unvalid' into text field 'id=exampleInputPassword2'</msg>
+<status status="PASS" endtime="20170919 12:32:21.706" starttime="20170919 12:32:21.660"></status>
+</kw>
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>css=body &gt; div.col-12.col-md-10.col-xl-8.py-md-3.pl-md-5.bd-content.ng-scope &gt; div.col-md-offset-4.ng-scope &gt; form &gt; button</arg>
+</arguments>
+<msg timestamp="20170919 12:32:21.706" level="INFO">Clicking button 'css=body &gt; div.col-12.col-md-10.col-xl-8.py-md-3.pl-md-5.bd-content.ng-scope &gt; div.col-md-offset-4.ng-scope &gt; form &gt; button'.</msg>
+<status status="PASS" endtime="20170919 12:32:21.753" starttime="20170919 12:32:21.706"></status>
+</kw>
+<status status="PASS" endtime="20170919 12:32:21.753" starttime="20170919 12:32:21.614"></status>
+</kw>
+<kw name="Signin Location Should Be Open" library="resources">
+<kw name="Location Should Be" library="Selenium2Library">
+<doc>Verifies that current URL is exactly `url`.</doc>
+<arguments>
+<arg>${SERVER}/#!/signInView</arg>
+</arguments>
+<msg timestamp="20170919 12:32:21.757" level="INFO">Current location is 'http://127.0.0.1:8080/#!/signInView'.</msg>
+<status status="PASS" endtime="20170919 12:32:21.757" starttime="20170919 12:32:21.753"></status>
+</kw>
+<status status="PASS" endtime="20170919 12:32:21.757" starttime="20170919 12:32:21.753"></status>
+</kw>
+<status status="PASS" endtime="20170919 12:32:21.757" starttime="20170919 12:32:21.613"></status>
+</kw>
+<kw name="Input Invalid Username" library="test_unvalidate">
+<kw name="Login Site" library="resources">
+<arguments>
+<arg>unvalid</arg>
+<arg>Qwerty12!</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>id=exampleInputEmail2</arg>
+<arg>${username}</arg>
+</arguments>
+<msg timestamp="20170919 12:32:21.759" level="INFO">Typing text 'unvalid' into text field 'id=exampleInputEmail2'</msg>
+<status status="PASS" endtime="20170919 12:32:21.806" starttime="20170919 12:32:21.758"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>id=exampleInputPassword2</arg>
+<arg>${password}</arg>
+</arguments>
+<msg timestamp="20170919 12:32:21.807" level="INFO">Typing text 'Qwerty12!' into text field 'id=exampleInputPassword2'</msg>
+<status status="PASS" endtime="20170919 12:32:21.852" starttime="20170919 12:32:21.806"></status>
+</kw>
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>css=body &gt; div.col-12.col-md-10.col-xl-8.py-md-3.pl-md-5.bd-content.ng-scope &gt; div.col-md-offset-4.ng-scope &gt; form &gt; button</arg>
+</arguments>
+<msg timestamp="20170919 12:32:21.852" level="INFO">Clicking button 'css=body &gt; div.col-12.col-md-10.col-xl-8.py-md-3.pl-md-5.bd-content.ng-scope &gt; div.col-md-offset-4.ng-scope &gt; form &gt; button'.</msg>
+<status status="PASS" endtime="20170919 12:32:21.903" starttime="20170919 12:32:21.852"></status>
+</kw>
+<status status="PASS" endtime="20170919 12:32:21.903" starttime="20170919 12:32:21.758"></status>
+</kw>
+<kw name="Signin Location Should Be Open" library="resources">
+<kw name="Location Should Be" library="Selenium2Library">
+<doc>Verifies that current URL is exactly `url`.</doc>
+<arguments>
+<arg>${SERVER}/#!/signInView</arg>
+</arguments>
+<msg timestamp="20170919 12:32:21.909" level="INFO">Current location is 'http://127.0.0.1:8080/#!/signInView'.</msg>
+<status status="PASS" endtime="20170919 12:32:21.910" starttime="20170919 12:32:21.904"></status>
+</kw>
+<status status="PASS" endtime="20170919 12:32:21.910" starttime="20170919 12:32:21.904"></status>
+</kw>
+<status status="PASS" endtime="20170919 12:32:21.910" starttime="20170919 12:32:21.758"></status>
+</kw>
+<status status="PASS" endtime="20170919 12:32:21.910" starttime="20170919 12:32:21.295"></status>
+</kw>
+<status status="PASS" endtime="20170919 12:32:21.910" critical="yes" starttime="20170919 12:32:21.295"></status>
+</test>
+<test id="s1-t3" name="Test Valid Login On Page">
+<kw name="Test Valid Login" library="test_validate">
+<kw name="Open Browser And Valid Test" library="test_validate">
 <kw name="Login Page Should Be Open" library="resources">
 <kw name="Location Should Be" library="Selenium2Library">
 <doc>Verifies that current URL is exactly `url`.</doc>
 <arguments>
 <arg>${LOGIN URL}</arg>
 </arguments>
-<msg timestamp="20170919 09:44:50.677" level="INFO">Current location is 'http://127.0.0.1:8080/#!/signInView'.</msg>
-<status status="PASS" endtime="20170919 09:44:50.677" starttime="20170919 09:44:50.662"></status>
+<msg timestamp="20170919 12:32:21.922" level="INFO">Current location is 'http://127.0.0.1:8080/#!/signInView'.</msg>
+<status status="PASS" endtime="20170919 12:32:21.922" starttime="20170919 12:32:21.913"></status>
 </kw>
-<status status="PASS" endtime="20170919 09:44:50.677" starttime="20170919 09:44:50.662"></status>
+<status status="PASS" endtime="20170919 12:32:21.922" starttime="20170919 12:32:21.913"></status>
 </kw>
 <kw name="Login Site" library="resources">
 <arguments>
@@ -52,8 +203,8 @@
 <arg>id=exampleInputEmail2</arg>
 <arg>${username}</arg>
 </arguments>
-<msg timestamp="20170919 09:44:50.677" level="INFO">Typing text 'Marcin' into text field 'id=exampleInputEmail2'</msg>
-<status status="PASS" endtime="20170919 09:44:50.802" starttime="20170919 09:44:50.677"></status>
+<msg timestamp="20170919 12:32:21.923" level="INFO">Typing text 'Marcin' into text field 'id=exampleInputEmail2'</msg>
+<status status="PASS" endtime="20170919 12:32:21.965" starttime="20170919 12:32:21.922"></status>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <doc>Types the given `text` into text field identified by `locator`.</doc>
@@ -61,53 +212,95 @@
 <arg>id=exampleInputPassword2</arg>
 <arg>${password}</arg>
 </arguments>
-<msg timestamp="20170919 09:44:50.802" level="INFO">Typing text 'Qwerty12!' into text field 'id=exampleInputPassword2'</msg>
-<status status="PASS" endtime="20170919 09:44:50.904" starttime="20170919 09:44:50.802"></status>
+<msg timestamp="20170919 12:32:21.966" level="INFO">Typing text 'Qwerty12!' into text field 'id=exampleInputPassword2'</msg>
+<status status="PASS" endtime="20170919 12:32:22.010" starttime="20170919 12:32:21.965"></status>
 </kw>
 <kw name="Click Button" library="Selenium2Library">
 <doc>Clicks a button identified by `locator`.</doc>
 <arguments>
 <arg>css=body &gt; div.col-12.col-md-10.col-xl-8.py-md-3.pl-md-5.bd-content.ng-scope &gt; div.col-md-offset-4.ng-scope &gt; form &gt; button</arg>
 </arguments>
-<msg timestamp="20170919 09:44:50.905" level="INFO">Clicking button 'css=body &gt; div.col-12.col-md-10.col-xl-8.py-md-3.pl-md-5.bd-content.ng-scope &gt; div.col-md-offset-4.ng-scope &gt; form &gt; button'.</msg>
-<status status="PASS" endtime="20170919 09:44:50.989" starttime="20170919 09:44:50.905"></status>
+<msg timestamp="20170919 12:32:22.011" level="INFO">Clicking button 'css=body &gt; div.col-12.col-md-10.col-xl-8.py-md-3.pl-md-5.bd-content.ng-scope &gt; div.col-md-offset-4.ng-scope &gt; form &gt; button'.</msg>
+<status status="PASS" endtime="20170919 12:32:22.051" starttime="20170919 12:32:22.010"></status>
 </kw>
-<status status="PASS" endtime="20170919 09:44:50.989" starttime="20170919 09:44:50.677"></status>
+<status status="PASS" endtime="20170919 12:32:22.051" starttime="20170919 12:32:21.922"></status>
 </kw>
-<kw name="Timesheet Page Should Be Open" library="resources">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>0.1</arg>
+</arguments>
+<msg timestamp="20170919 12:32:22.165" level="INFO">Slept 100 milliseconds</msg>
+<status status="PASS" endtime="20170919 12:32:22.165" starttime="20170919 12:32:22.052"></status>
+</kw>
+<kw name="Timesheet Location Should Be Open" library="resources">
 <kw name="Location Should Be" library="Selenium2Library">
 <doc>Verifies that current URL is exactly `url`.</doc>
 <arguments>
 <arg>${SERVER}/#!/Timesheet</arg>
 </arguments>
-<kw name="Capture Page Screenshot" library="Selenium2Library">
-<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
-<msg timestamp="20170919 09:44:51.338" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" endtime="20170919 09:44:51.338" starttime="20170919 09:44:50.994"></status>
+<msg timestamp="20170919 12:32:22.174" level="INFO">Current location is 'http://127.0.0.1:8080/#!/Timesheet'.</msg>
+<status status="PASS" endtime="20170919 12:32:22.174" starttime="20170919 12:32:22.165"></status>
 </kw>
-<msg timestamp="20170919 09:44:51.338" level="FAIL">Location should have been 'http://127.0.0.1:8080/#!/Timesheet' but was 'http://127.0.0.1:8080/#!/signInView'</msg>
-<status status="FAIL" endtime="20170919 09:44:51.338" starttime="20170919 09:44:50.990"></status>
+<status status="PASS" endtime="20170919 12:32:22.174" starttime="20170919 12:32:22.165"></status>
 </kw>
-<status status="FAIL" endtime="20170919 09:44:51.338" starttime="20170919 09:44:50.990"></status>
+<status status="PASS" endtime="20170919 12:32:22.174" starttime="20170919 12:32:21.913"></status>
 </kw>
-<status status="FAIL" endtime="20170919 09:44:51.338" starttime="20170919 09:44:45.668"></status>
+<kw name="Logout From Site" library="test_validate">
+<kw name="Logout" library="resources">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>css=#navbar-menu-right &gt; li.dropdown &gt; a</arg>
+</arguments>
+<msg timestamp="20170919 12:32:22.175" level="INFO">Clicking element 'css=#navbar-menu-right &gt; li.dropdown &gt; a'.</msg>
+<status status="PASS" endtime="20170919 12:32:22.258" starttime="20170919 12:32:22.175"></status>
 </kw>
-<status status="FAIL" endtime="20170919 09:44:51.338" critical="yes" starttime="20170919 09:44:45.668">Location should have been 'http://127.0.0.1:8080/#!/Timesheet' but was 'http://127.0.0.1:8080/#!/signInView'</status>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>css=#navbar-menu-right &gt; li.dropdown.open &gt; ul &gt; li:nth-child(1) &gt; a</arg>
+</arguments>
+<msg timestamp="20170919 12:32:22.259" level="INFO">Clicking element 'css=#navbar-menu-right &gt; li.dropdown.open &gt; ul &gt; li:nth-child(1) &gt; a'.</msg>
+<status status="PASS" endtime="20170919 12:32:22.332" starttime="20170919 12:32:22.258"></status>
+</kw>
+<status status="PASS" endtime="20170919 12:32:22.332" starttime="20170919 12:32:22.175"></status>
+</kw>
+<kw name="Signin Location Should Be Open" library="resources">
+<kw name="Location Should Be" library="Selenium2Library">
+<doc>Verifies that current URL is exactly `url`.</doc>
+<arguments>
+<arg>${SERVER}/#!/signInView</arg>
+</arguments>
+<msg timestamp="20170919 12:32:22.341" level="INFO">Current location is 'http://127.0.0.1:8080/#!/signInView'.</msg>
+<status status="PASS" endtime="20170919 12:32:22.341" starttime="20170919 12:32:22.333"></status>
+</kw>
+<status status="PASS" endtime="20170919 12:32:22.341" starttime="20170919 12:32:22.333"></status>
+</kw>
+<status status="PASS" endtime="20170919 12:32:22.341" starttime="20170919 12:32:22.174"></status>
+</kw>
+<status status="PASS" endtime="20170919 12:32:22.341" starttime="20170919 12:32:21.912"></status>
+</kw>
+<status status="PASS" endtime="20170919 12:32:22.342" critical="yes" starttime="20170919 12:32:21.911"></status>
 </test>
-<doc>Main test program checking login page</doc>
-<status status="FAIL" endtime="20170919 09:44:51.338" starttime="20170919 09:44:45.536"></status>
+<test id="s1-t4" name="Test Resource Employees">
+<status status="FAIL" endtime="20170919 12:32:22.344" critical="yes" starttime="20170919 12:32:22.343">Test case contains no keywords.</status>
+</test>
+<doc>Main test program of this page</doc>
+<status status="FAIL" endtime="20170919 12:32:22.345" starttime="20170919 12:32:16.153"></status>
 </suite>
 <statistics>
 <total>
-<stat fail="1" pass="0">Critical Tests</stat>
-<stat fail="1" pass="0">All Tests</stat>
+<stat fail="1" pass="3">Critical Tests</stat>
+<stat fail="1" pass="3">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat fail="1" id="s1" name="Test Validate" pass="0">Test Validate</stat>
+<stat fail="1" id="s1" name="Test site" pass="3">Test site</stat>
 </suite>
 </statistics>
 <errors>
+<msg timestamp="20170919 12:32:16.269" level="ERROR">Error in file 'C:\Users\Hehesz\PycharmProjects\untitled\billennium_resources\Test_site.robot': Unsupported file format ''.</msg>
 </errors>
 </robot>

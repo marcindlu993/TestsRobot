@@ -22,6 +22,7 @@ Login Site
     Input Text  id=exampleInputEmail2  ${username}
     Input Text  id=exampleInputPassword2  ${password}
     Click Button  css=body > div.col-12.col-md-10.col-xl-8.py-md-3.pl-md-5.bd-content.ng-scope > div.col-md-offset-4.ng-scope > form > button
+    Sleep  0.1
 
 Timesheet Location Should Be Open
     Location Should Be  ${SERVER}/#!/Timesheet
