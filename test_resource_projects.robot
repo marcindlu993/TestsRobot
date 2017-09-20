@@ -7,10 +7,8 @@ Resource  resources.robot
 *** Keywords ***
 Test Resource Projects
     Open Location Projects
-    :FOR  ${x}  IN RANGE  1  5
-    \  Add New Project
-    :FOR  ${Q}  IN RANGE  1  5
-    \  Delete New Project
+    Add New Project
+    Delete New Project
     Update Project  things
     Update Project  something things
 
@@ -29,8 +27,9 @@ Add New Project
 Delete New Project
     Click Button  xpath=/html/body/div[3]/div[2]/div[2]/table/tbody/tr[2]/td[4]/button
     Wait Until Element Is Visible  css=#confirmDelete
-    Click Button  css=#myModalAdd > div > div > div > div > div.modal-footer > button.btn.btn-primary.btn-default
+    Click Button  css=#confirmDelete > div > div > div > div > div.modal-footer > button.btn.btn-primary.btn-default
     Sleep  0.3
+
 
 Update Project
     [Arguments]  ${name}

@@ -1,0 +1,16 @@
+[0920/115004.751:ERROR:process_reader_win.cc(151)] SuspendThread: Odmowa dostêpu. (0x5)
+[0920/115004.751:ERROR:process_reader_win.cc(151)] SuspendThread: Odmowa dostêpu. (0x5)
+[0920/115004.751:ERROR:process_reader_win.cc(151)] SuspendThread: Odmowa dostêpu. (0x5)
+[0920/115004.751:ERROR:process_reader_win.cc(151)] SuspendThread: Odmowa dostêpu. (0x5)
+[0920/115004.751:ERROR:process_reader_win.cc(123)] NtOpenThread: {Odmowa dostêpu} Proces za¿¹da³ dostêpu do obiektu, ale prawa dostêpu nie zosta³y przyznane.  (0xc0000022)
+[0920/115004.751:ERROR:exception_snapshot_win.cc(87)] thread ID 8448 not found in process
+[0920/115004.751:WARNING:crash_report_exception_handler.cc(62)] ProcessSnapshotWin::Initialize failed
+[0920/115004.751:ERROR:process_reader_win.cc(151)] SuspendThread: Odmowa dostêpu. (0x5)
+[0920/115004.751:ERROR:process_reader_win.cc(151)] SuspendThread: Odmowa dostêpu. (0x5)
+[0920/115004.751:ERROR:process_reader_win.cc(151)] SuspendThread: Odmowa dostêpu. (0x5)
+[0920/115004.751:ERROR:process_reader_win.cc(123)] NtOpenThread: {Odmowa dostêpu} Proces za¿¹da³ dostêpu do obiektu, ale prawa dostêpu nie zosta³y przyznane.  (0xc0000022)
+[0920/115004.751:ERROR:exception_snapshot_win.cc(87)] thread ID 10264 not found in process
+[0920/115004.751:WARNING:crash_report_exception_handler.cc(62)] ProcessSnapshotWin::Initialize failed
+[0920/115004.766:ERROR:process_reader_win.cc(123)] NtOpenThread: {Odmowa dostêpu} Proces za¿¹da³ dostêpu do obiektu, ale prawa dostêpu nie zosta³y przyznane.  (0xc0000022)
+[0920/115004.766:ERROR:exception_snapshot_win.cc(87)] thread ID 15228 not found in process
+[0920/115004.766:WARNING:crash_report_exception_handler.cc(62)] ProcessSnapshotWin::Initialize failed
