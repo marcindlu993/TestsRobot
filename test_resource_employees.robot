@@ -8,9 +8,9 @@ Resource  resources.robot
 Test Resource Employees
     Login To Site
     Open Location Employees
-    :FOR  ${x}  IN RANGE  1  5
+    :FOR  ${x}  IN RANGE  1  3
     \  Add New Employee
-    :FOR  ${Q}  IN RANGE  1  5
+    :FOR  ${Q}  IN RANGE  1  3
     \  Delete New Employee
     Update Employee  Dlug
     Update Employee  Clinton
@@ -31,7 +31,7 @@ Add New Employee
     Sleep  0.3
 
 Delete New Employee
-    Click Button  css=body > div.col-12.col-md-10.col-xl-8.py-md-3.pl-md-5.bd-content.ng-scope > div.col-sm-10.center-block.border-container.ng-scope > div.table-responsive.center-block.col-xs-12 > table > tbody:nth-child(3) > tr > td:nth-child(6) > button
+    Click Button  css=body > div.col-12.col-md-10.col-xl-8.py-md-3.pl-md-5.bd-content.ng-scope > div.col-sm-10.center-block.border-container.ng-scope > div.table-responsive.center-block.col-xs-12 > table > tbody > tr > td:nth-child(6) > button
     Wait Until Element Is Visible  css=#confirmDelete
     Click Button  css=#confirmDelete > div > div > div.modal-footer > button.btn.btn-primary.btn-default
     Sleep  0.3
