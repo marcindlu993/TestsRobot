@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generated="20170919 12:32:16.137" generator="Robot 3.0.2 (Python 2.7.8 on win32)">
-<suite source="C:\Users\Hehesz\PycharmProjects\untitled\billennium_resources\Test_site.robot" id="s1" name="Test site">
+<robot generated="20171002 14:22:22.743" generator="Robot 3.0.2 (Python 2.7.13 on win32)">
+<suite source="C:\Tests\TestsRobot\Test_site.robot" id="s1" name="Test site">
 <test id="s1-t1" name="Open Browser To Login Page Test">
 <kw name="Open Browser To Login Page" library="resources">
 <kw name="Open Browser" library="Selenium2Library">
@@ -9,12 +9,12 @@
 <arg>${SERVER}</arg>
 <arg>${BROWSER}</arg>
 </arguments>
-<msg timestamp="20170919 12:32:16.284" level="INFO">Opening browser 'chrome' to base url 'http://127.0.0.1:8080'</msg>
-<status status="PASS" endtime="20170919 12:32:20.137" starttime="20170919 12:32:16.284"></status>
+<msg timestamp="20171002 14:22:22.931" level="INFO">Opening browser 'chrome' to base url 'http://127.0.0.1:8080'</msg>
+<status status="PASS" endtime="20171002 14:22:26.924" starttime="20171002 14:22:22.931"></status>
 </kw>
 <kw name="Maximize Browser Window" library="Selenium2Library">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" endtime="20170919 12:32:21.279" starttime="20170919 12:32:20.137"></status>
+<status status="PASS" endtime="20171002 14:22:28.087" starttime="20171002 14:22:26.925"></status>
 </kw>
 <kw name="Login Page Should Be Open" library="resources">
 <kw name="Location Should Be" library="Selenium2Library">
@@ -22,14 +22,14 @@
 <arguments>
 <arg>${LOGIN URL}</arg>
 </arguments>
-<msg timestamp="20170919 12:32:21.279" level="INFO">Current location is 'http://127.0.0.1:8080/#!/signInView'.</msg>
-<status status="PASS" endtime="20170919 12:32:21.279" starttime="20170919 12:32:21.279"></status>
+<msg timestamp="20171002 14:22:28.087" level="INFO">Current location is 'http://127.0.0.1:8080/#!/signInView'.</msg>
+<status status="PASS" endtime="20171002 14:22:28.087" starttime="20171002 14:22:28.087"></status>
 </kw>
-<status status="PASS" endtime="20170919 12:32:21.279" starttime="20170919 12:32:21.279"></status>
+<status status="PASS" endtime="20171002 14:22:28.087" starttime="20171002 14:22:28.087"></status>
 </kw>
-<status status="PASS" endtime="20170919 12:32:21.279" starttime="20170919 12:32:16.284"></status>
+<status status="PASS" endtime="20171002 14:22:28.087" starttime="20171002 14:22:22.931"></status>
 </kw>
-<status status="PASS" endtime="20170919 12:32:21.279" critical="yes" starttime="20170919 12:32:16.269"></status>
+<status status="PASS" endtime="20171002 14:22:28.087" critical="yes" starttime="20171002 14:22:22.931"></status>
 </test>
 <test id="s1-t2" name="Test Unvalid Logins On Page">
 <kw name="Test Unvalid Logins" library="test_unvalidate">
@@ -45,8 +45,8 @@
 <arg>id=exampleInputEmail2</arg>
 <arg>${username}</arg>
 </arguments>
-<msg timestamp="20170919 12:32:21.295" level="INFO">Typing text 'unvalid' into text field 'id=exampleInputEmail2'</msg>
-<status status="PASS" endtime="20170919 12:32:21.423" starttime="20170919 12:32:21.295"></status>
+<msg timestamp="20171002 14:22:28.103" level="INFO">Typing text 'unvalid' into text field 'id=exampleInputEmail2'</msg>
+<status status="PASS" endtime="20171002 14:22:28.232" starttime="20171002 14:22:28.103"></status>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <doc>Types the given `text` into text field identified by `locator`.</doc>
@@ -54,18 +54,26 @@
 <arg>id=exampleInputPassword2</arg>
 <arg>${password}</arg>
 </arguments>
-<msg timestamp="20170919 12:32:21.423" level="INFO">Typing text 'unvalid' into text field 'id=exampleInputPassword2'</msg>
-<status status="PASS" endtime="20170919 12:32:21.513" starttime="20170919 12:32:21.423"></status>
+<msg timestamp="20171002 14:22:28.232" level="INFO">Typing text 'unvalid' into text field 'id=exampleInputPassword2'</msg>
+<status status="PASS" endtime="20171002 14:22:28.342" starttime="20171002 14:22:28.232"></status>
 </kw>
 <kw name="Click Button" library="Selenium2Library">
 <doc>Clicks a button identified by `locator`.</doc>
 <arguments>
 <arg>css=body &gt; div.col-12.col-md-10.col-xl-8.py-md-3.pl-md-5.bd-content.ng-scope &gt; div.col-md-offset-4.ng-scope &gt; form &gt; button</arg>
 </arguments>
-<msg timestamp="20170919 12:32:21.513" level="INFO">Clicking button 'css=body &gt; div.col-12.col-md-10.col-xl-8.py-md-3.pl-md-5.bd-content.ng-scope &gt; div.col-md-offset-4.ng-scope &gt; form &gt; button'.</msg>
-<status status="PASS" endtime="20170919 12:32:21.606" starttime="20170919 12:32:21.513"></status>
+<msg timestamp="20171002 14:22:28.342" level="INFO">Clicking button 'css=body &gt; div.col-12.col-md-10.col-xl-8.py-md-3.pl-md-5.bd-content.ng-scope &gt; div.col-md-offset-4.ng-scope &gt; form &gt; button'.</msg>
+<status status="PASS" endtime="20171002 14:22:28.443" starttime="20171002 14:22:28.342"></status>
 </kw>
-<status status="PASS" endtime="20170919 12:32:21.606" starttime="20170919 12:32:21.295"></status>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>0.1</arg>
+</arguments>
+<msg timestamp="20171002 14:22:28.543" level="INFO">Slept 100 milliseconds</msg>
+<status status="PASS" endtime="20171002 14:22:28.543" starttime="20171002 14:22:28.443"></status>
+</kw>
+<status status="PASS" endtime="20171002 14:22:28.543" starttime="20171002 14:22:28.103"></status>
 </kw>
 <kw name="Signin Location Should Be Open" library="resources">
 <kw name="Location Should Be" library="Selenium2Library">
@@ -73,12 +81,12 @@
 <arguments>
 <arg>${SERVER}/#!/signInView</arg>
 </arguments>
-<msg timestamp="20170919 12:32:21.613" level="INFO">Current location is 'http://127.0.0.1:8080/#!/signInView'.</msg>
-<status status="PASS" endtime="20170919 12:32:21.613" starttime="20170919 12:32:21.607"></status>
+<msg timestamp="20171002 14:22:28.550" level="INFO">Current location is 'http://127.0.0.1:8080/#!/signInView'.</msg>
+<status status="PASS" endtime="20171002 14:22:28.550" starttime="20171002 14:22:28.543"></status>
 </kw>
-<status status="PASS" endtime="20170919 12:32:21.613" starttime="20170919 12:32:21.606"></status>
+<status status="PASS" endtime="20171002 14:22:28.550" starttime="20171002 14:22:28.543"></status>
 </kw>
-<status status="PASS" endtime="20170919 12:32:21.613" starttime="20170919 12:32:21.295"></status>
+<status status="PASS" endtime="20171002 14:22:28.551" starttime="20171002 14:22:28.087"></status>
 </kw>
 <kw name="Input Invalid Password" library="test_unvalidate">
 <kw name="Login Site" library="resources">
@@ -92,8 +100,8 @@
 <arg>id=exampleInputEmail2</arg>
 <arg>${username}</arg>
 </arguments>
-<msg timestamp="20170919 12:32:21.616" level="INFO">Typing text 'Marcin' into text field 'id=exampleInputEmail2'</msg>
-<status status="PASS" endtime="20170919 12:32:21.660" starttime="20170919 12:32:21.616"></status>
+<msg timestamp="20171002 14:22:28.552" level="INFO">Typing text 'Marcin' into text field 'id=exampleInputEmail2'</msg>
+<status status="PASS" endtime="20171002 14:22:28.610" starttime="20171002 14:22:28.551"></status>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <doc>Types the given `text` into text field identified by `locator`.</doc>
@@ -101,18 +109,26 @@
 <arg>id=exampleInputPassword2</arg>
 <arg>${password}</arg>
 </arguments>
-<msg timestamp="20170919 12:32:21.660" level="INFO">Typing text 'unvalid' into text field 'id=exampleInputPassword2'</msg>
-<status status="PASS" endtime="20170919 12:32:21.706" starttime="20170919 12:32:21.660"></status>
+<msg timestamp="20171002 14:22:28.610" level="INFO">Typing text 'unvalid' into text field 'id=exampleInputPassword2'</msg>
+<status status="PASS" endtime="20171002 14:22:28.677" starttime="20171002 14:22:28.610"></status>
 </kw>
 <kw name="Click Button" library="Selenium2Library">
 <doc>Clicks a button identified by `locator`.</doc>
 <arguments>
 <arg>css=body &gt; div.col-12.col-md-10.col-xl-8.py-md-3.pl-md-5.bd-content.ng-scope &gt; div.col-md-offset-4.ng-scope &gt; form &gt; button</arg>
 </arguments>
-<msg timestamp="20170919 12:32:21.706" level="INFO">Clicking button 'css=body &gt; div.col-12.col-md-10.col-xl-8.py-md-3.pl-md-5.bd-content.ng-scope &gt; div.col-md-offset-4.ng-scope &gt; form &gt; button'.</msg>
-<status status="PASS" endtime="20170919 12:32:21.753" starttime="20170919 12:32:21.706"></status>
+<msg timestamp="20171002 14:22:28.677" level="INFO">Clicking button 'css=body &gt; div.col-12.col-md-10.col-xl-8.py-md-3.pl-md-5.bd-content.ng-scope &gt; div.col-md-offset-4.ng-scope &gt; form &gt; button'.</msg>
+<status status="PASS" endtime="20171002 14:22:28.738" starttime="20171002 14:22:28.677"></status>
 </kw>
-<status status="PASS" endtime="20170919 12:32:21.753" starttime="20170919 12:32:21.614"></status>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>0.1</arg>
+</arguments>
+<msg timestamp="20171002 14:22:28.838" level="INFO">Slept 100 milliseconds</msg>
+<status status="PASS" endtime="20171002 14:22:28.838" starttime="20171002 14:22:28.738"></status>
+</kw>
+<status status="PASS" endtime="20171002 14:22:28.838" starttime="20171002 14:22:28.551"></status>
 </kw>
 <kw name="Signin Location Should Be Open" library="resources">
 <kw name="Location Should Be" library="Selenium2Library">
@@ -120,12 +136,12 @@
 <arguments>
 <arg>${SERVER}/#!/signInView</arg>
 </arguments>
-<msg timestamp="20170919 12:32:21.757" level="INFO">Current location is 'http://127.0.0.1:8080/#!/signInView'.</msg>
-<status status="PASS" endtime="20170919 12:32:21.757" starttime="20170919 12:32:21.753"></status>
+<msg timestamp="20171002 14:22:28.844" level="INFO">Current location is 'http://127.0.0.1:8080/#!/signInView'.</msg>
+<status status="PASS" endtime="20171002 14:22:28.844" starttime="20171002 14:22:28.839"></status>
 </kw>
-<status status="PASS" endtime="20170919 12:32:21.757" starttime="20170919 12:32:21.753"></status>
+<status status="PASS" endtime="20171002 14:22:28.844" starttime="20171002 14:22:28.838"></status>
 </kw>
-<status status="PASS" endtime="20170919 12:32:21.757" starttime="20170919 12:32:21.613"></status>
+<status status="PASS" endtime="20171002 14:22:28.844" starttime="20171002 14:22:28.551"></status>
 </kw>
 <kw name="Input Invalid Username" library="test_unvalidate">
 <kw name="Login Site" library="resources">
@@ -139,8 +155,8 @@
 <arg>id=exampleInputEmail2</arg>
 <arg>${username}</arg>
 </arguments>
-<msg timestamp="20170919 12:32:21.759" level="INFO">Typing text 'unvalid' into text field 'id=exampleInputEmail2'</msg>
-<status status="PASS" endtime="20170919 12:32:21.806" starttime="20170919 12:32:21.758"></status>
+<msg timestamp="20171002 14:22:28.845" level="INFO">Typing text 'unvalid' into text field 'id=exampleInputEmail2'</msg>
+<status status="PASS" endtime="20171002 14:22:28.915" starttime="20171002 14:22:28.845"></status>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <doc>Types the given `text` into text field identified by `locator`.</doc>
@@ -148,18 +164,26 @@
 <arg>id=exampleInputPassword2</arg>
 <arg>${password}</arg>
 </arguments>
-<msg timestamp="20170919 12:32:21.807" level="INFO">Typing text 'Qwerty12!' into text field 'id=exampleInputPassword2'</msg>
-<status status="PASS" endtime="20170919 12:32:21.852" starttime="20170919 12:32:21.806"></status>
+<msg timestamp="20171002 14:22:28.916" level="INFO">Typing text 'Qwerty12!' into text field 'id=exampleInputPassword2'</msg>
+<status status="PASS" endtime="20171002 14:22:28.978" starttime="20171002 14:22:28.915"></status>
 </kw>
 <kw name="Click Button" library="Selenium2Library">
 <doc>Clicks a button identified by `locator`.</doc>
 <arguments>
 <arg>css=body &gt; div.col-12.col-md-10.col-xl-8.py-md-3.pl-md-5.bd-content.ng-scope &gt; div.col-md-offset-4.ng-scope &gt; form &gt; button</arg>
 </arguments>
-<msg timestamp="20170919 12:32:21.852" level="INFO">Clicking button 'css=body &gt; div.col-12.col-md-10.col-xl-8.py-md-3.pl-md-5.bd-content.ng-scope &gt; div.col-md-offset-4.ng-scope &gt; form &gt; button'.</msg>
-<status status="PASS" endtime="20170919 12:32:21.903" starttime="20170919 12:32:21.852"></status>
+<msg timestamp="20171002 14:22:28.978" level="INFO">Clicking button 'css=body &gt; div.col-12.col-md-10.col-xl-8.py-md-3.pl-md-5.bd-content.ng-scope &gt; div.col-md-offset-4.ng-scope &gt; form &gt; button'.</msg>
+<status status="PASS" endtime="20171002 14:22:29.039" starttime="20171002 14:22:28.978"></status>
 </kw>
-<status status="PASS" endtime="20170919 12:32:21.903" starttime="20170919 12:32:21.758"></status>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>0.1</arg>
+</arguments>
+<msg timestamp="20171002 14:22:29.140" level="INFO">Slept 100 milliseconds</msg>
+<status status="PASS" endtime="20171002 14:22:29.140" starttime="20171002 14:22:29.039"></status>
+</kw>
+<status status="PASS" endtime="20171002 14:22:29.141" starttime="20171002 14:22:28.845"></status>
 </kw>
 <kw name="Signin Location Should Be Open" library="resources">
 <kw name="Location Should Be" library="Selenium2Library">
@@ -167,16 +191,16 @@
 <arguments>
 <arg>${SERVER}/#!/signInView</arg>
 </arguments>
-<msg timestamp="20170919 12:32:21.909" level="INFO">Current location is 'http://127.0.0.1:8080/#!/signInView'.</msg>
-<status status="PASS" endtime="20170919 12:32:21.910" starttime="20170919 12:32:21.904"></status>
+<msg timestamp="20171002 14:22:29.152" level="INFO">Current location is 'http://127.0.0.1:8080/#!/signInView'.</msg>
+<status status="PASS" endtime="20171002 14:22:29.152" starttime="20171002 14:22:29.141"></status>
 </kw>
-<status status="PASS" endtime="20170919 12:32:21.910" starttime="20170919 12:32:21.904"></status>
+<status status="PASS" endtime="20171002 14:22:29.153" starttime="20171002 14:22:29.141"></status>
 </kw>
-<status status="PASS" endtime="20170919 12:32:21.910" starttime="20170919 12:32:21.758"></status>
+<status status="PASS" endtime="20171002 14:22:29.153" starttime="20171002 14:22:28.844"></status>
 </kw>
-<status status="PASS" endtime="20170919 12:32:21.910" starttime="20170919 12:32:21.295"></status>
+<status status="PASS" endtime="20171002 14:22:29.153" starttime="20171002 14:22:28.087"></status>
 </kw>
-<status status="PASS" endtime="20170919 12:32:21.910" critical="yes" starttime="20170919 12:32:21.295"></status>
+<status status="PASS" endtime="20171002 14:22:29.153" critical="yes" starttime="20171002 14:22:28.087"></status>
 </test>
 <test id="s1-t3" name="Test Valid Login On Page">
 <kw name="Test Valid Login" library="test_validate">
@@ -187,10 +211,10 @@
 <arguments>
 <arg>${LOGIN URL}</arg>
 </arguments>
-<msg timestamp="20170919 12:32:21.922" level="INFO">Current location is 'http://127.0.0.1:8080/#!/signInView'.</msg>
-<status status="PASS" endtime="20170919 12:32:21.922" starttime="20170919 12:32:21.913"></status>
+<msg timestamp="20171002 14:22:29.160" level="INFO">Current location is 'http://127.0.0.1:8080/#!/signInView'.</msg>
+<status status="PASS" endtime="20171002 14:22:29.160" starttime="20171002 14:22:29.156"></status>
 </kw>
-<status status="PASS" endtime="20170919 12:32:21.922" starttime="20170919 12:32:21.913"></status>
+<status status="PASS" endtime="20171002 14:22:29.160" starttime="20171002 14:22:29.156"></status>
 </kw>
 <kw name="Login Site" library="resources">
 <arguments>
@@ -203,8 +227,8 @@
 <arg>id=exampleInputEmail2</arg>
 <arg>${username}</arg>
 </arguments>
-<msg timestamp="20170919 12:32:21.923" level="INFO">Typing text 'Marcin' into text field 'id=exampleInputEmail2'</msg>
-<status status="PASS" endtime="20170919 12:32:21.965" starttime="20170919 12:32:21.922"></status>
+<msg timestamp="20171002 14:22:29.161" level="INFO">Typing text 'Marcin' into text field 'id=exampleInputEmail2'</msg>
+<status status="PASS" endtime="20171002 14:22:29.230" starttime="20171002 14:22:29.161"></status>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <doc>Types the given `text` into text field identified by `locator`.</doc>
@@ -212,26 +236,34 @@
 <arg>id=exampleInputPassword2</arg>
 <arg>${password}</arg>
 </arguments>
-<msg timestamp="20170919 12:32:21.966" level="INFO">Typing text 'Qwerty12!' into text field 'id=exampleInputPassword2'</msg>
-<status status="PASS" endtime="20170919 12:32:22.010" starttime="20170919 12:32:21.965"></status>
+<msg timestamp="20171002 14:22:29.230" level="INFO">Typing text 'Qwerty12!' into text field 'id=exampleInputPassword2'</msg>
+<status status="PASS" endtime="20171002 14:22:29.298" starttime="20171002 14:22:29.230"></status>
 </kw>
 <kw name="Click Button" library="Selenium2Library">
 <doc>Clicks a button identified by `locator`.</doc>
 <arguments>
 <arg>css=body &gt; div.col-12.col-md-10.col-xl-8.py-md-3.pl-md-5.bd-content.ng-scope &gt; div.col-md-offset-4.ng-scope &gt; form &gt; button</arg>
 </arguments>
-<msg timestamp="20170919 12:32:22.011" level="INFO">Clicking button 'css=body &gt; div.col-12.col-md-10.col-xl-8.py-md-3.pl-md-5.bd-content.ng-scope &gt; div.col-md-offset-4.ng-scope &gt; form &gt; button'.</msg>
-<status status="PASS" endtime="20170919 12:32:22.051" starttime="20170919 12:32:22.010"></status>
-</kw>
-<status status="PASS" endtime="20170919 12:32:22.051" starttime="20170919 12:32:21.922"></status>
+<msg timestamp="20171002 14:22:29.299" level="INFO">Clicking button 'css=body &gt; div.col-12.col-md-10.col-xl-8.py-md-3.pl-md-5.bd-content.ng-scope &gt; div.col-md-offset-4.ng-scope &gt; form &gt; button'.</msg>
+<status status="PASS" endtime="20171002 14:22:29.356" starttime="20171002 14:22:29.299"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>0.1</arg>
 </arguments>
-<msg timestamp="20170919 12:32:22.165" level="INFO">Slept 100 milliseconds</msg>
-<status status="PASS" endtime="20170919 12:32:22.165" starttime="20170919 12:32:22.052"></status>
+<msg timestamp="20171002 14:22:29.464" level="INFO">Slept 100 milliseconds</msg>
+<status status="PASS" endtime="20171002 14:22:29.464" starttime="20171002 14:22:29.356"></status>
+</kw>
+<status status="PASS" endtime="20171002 14:22:29.464" starttime="20171002 14:22:29.160"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>0.1</arg>
+</arguments>
+<msg timestamp="20171002 14:22:29.578" level="INFO">Slept 100 milliseconds</msg>
+<status status="PASS" endtime="20171002 14:22:29.578" starttime="20171002 14:22:29.464"></status>
 </kw>
 <kw name="Timesheet Location Should Be Open" library="resources">
 <kw name="Location Should Be" library="Selenium2Library">
@@ -239,12 +271,12 @@
 <arguments>
 <arg>${SERVER}/#!/Timesheet</arg>
 </arguments>
-<msg timestamp="20170919 12:32:22.174" level="INFO">Current location is 'http://127.0.0.1:8080/#!/Timesheet'.</msg>
-<status status="PASS" endtime="20170919 12:32:22.174" starttime="20170919 12:32:22.165"></status>
+<msg timestamp="20171002 14:22:29.578" level="INFO">Current location is 'http://127.0.0.1:8080/#!/Timesheet'.</msg>
+<status status="PASS" endtime="20171002 14:22:29.578" starttime="20171002 14:22:29.578"></status>
 </kw>
-<status status="PASS" endtime="20170919 12:32:22.174" starttime="20170919 12:32:22.165"></status>
+<status status="PASS" endtime="20171002 14:22:29.578" starttime="20171002 14:22:29.578"></status>
 </kw>
-<status status="PASS" endtime="20170919 12:32:22.174" starttime="20170919 12:32:21.913"></status>
+<status status="PASS" endtime="20171002 14:22:29.578" starttime="20171002 14:22:29.155"></status>
 </kw>
 <kw name="Logout From Site" library="test_validate">
 <kw name="Logout" library="resources">
@@ -253,18 +285,18 @@
 <arguments>
 <arg>css=#navbar-menu-right &gt; li.dropdown &gt; a</arg>
 </arguments>
-<msg timestamp="20170919 12:32:22.175" level="INFO">Clicking element 'css=#navbar-menu-right &gt; li.dropdown &gt; a'.</msg>
-<status status="PASS" endtime="20170919 12:32:22.258" starttime="20170919 12:32:22.175"></status>
+<msg timestamp="20171002 14:22:29.578" level="INFO">Clicking element 'css=#navbar-menu-right &gt; li.dropdown &gt; a'.</msg>
+<status status="PASS" endtime="20171002 14:22:29.646" starttime="20171002 14:22:29.578"></status>
 </kw>
 <kw name="Click Element" library="Selenium2Library">
 <doc>Click element identified by `locator`.</doc>
 <arguments>
 <arg>css=#navbar-menu-right &gt; li.dropdown.open &gt; ul &gt; li:nth-child(1) &gt; a</arg>
 </arguments>
-<msg timestamp="20170919 12:32:22.259" level="INFO">Clicking element 'css=#navbar-menu-right &gt; li.dropdown.open &gt; ul &gt; li:nth-child(1) &gt; a'.</msg>
-<status status="PASS" endtime="20170919 12:32:22.332" starttime="20170919 12:32:22.258"></status>
+<msg timestamp="20171002 14:22:29.647" level="INFO">Clicking element 'css=#navbar-menu-right &gt; li.dropdown.open &gt; ul &gt; li:nth-child(1) &gt; a'.</msg>
+<status status="PASS" endtime="20171002 14:22:29.727" starttime="20171002 14:22:29.647"></status>
 </kw>
-<status status="PASS" endtime="20170919 12:32:22.332" starttime="20170919 12:32:22.175"></status>
+<status status="PASS" endtime="20171002 14:22:29.727" starttime="20171002 14:22:29.578"></status>
 </kw>
 <kw name="Signin Location Should Be Open" library="resources">
 <kw name="Location Should Be" library="Selenium2Library">
@@ -272,35 +304,686 @@
 <arguments>
 <arg>${SERVER}/#!/signInView</arg>
 </arguments>
-<msg timestamp="20170919 12:32:22.341" level="INFO">Current location is 'http://127.0.0.1:8080/#!/signInView'.</msg>
-<status status="PASS" endtime="20170919 12:32:22.341" starttime="20170919 12:32:22.333"></status>
+<msg timestamp="20171002 14:22:29.735" level="INFO">Current location is 'http://127.0.0.1:8080/#!/signInView'.</msg>
+<status status="PASS" endtime="20171002 14:22:29.735" starttime="20171002 14:22:29.728"></status>
 </kw>
-<status status="PASS" endtime="20170919 12:32:22.341" starttime="20170919 12:32:22.333"></status>
+<status status="PASS" endtime="20171002 14:22:29.736" starttime="20171002 14:22:29.728"></status>
 </kw>
-<status status="PASS" endtime="20170919 12:32:22.341" starttime="20170919 12:32:22.174"></status>
+<status status="PASS" endtime="20171002 14:22:29.736" starttime="20171002 14:22:29.578"></status>
 </kw>
-<status status="PASS" endtime="20170919 12:32:22.341" starttime="20170919 12:32:21.912"></status>
+<status status="PASS" endtime="20171002 14:22:29.736" starttime="20171002 14:22:29.155"></status>
 </kw>
-<status status="PASS" endtime="20170919 12:32:22.342" critical="yes" starttime="20170919 12:32:21.911"></status>
+<status status="PASS" endtime="20171002 14:22:29.737" critical="yes" starttime="20171002 14:22:29.154"></status>
 </test>
 <test id="s1-t4" name="Test Resource Employees">
-<status status="FAIL" endtime="20170919 12:32:22.344" critical="yes" starttime="20170919 12:32:22.343">Test case contains no keywords.</status>
+<kw name="Test Resource Employees" library="test_resource_employees">
+<kw name="Login To Site" library="resources">
+<kw name="Login Site" library="resources">
+<arguments>
+<arg>Marcin</arg>
+<arg>Qwerty12!</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>id=exampleInputEmail2</arg>
+<arg>${username}</arg>
+</arguments>
+<msg timestamp="20171002 14:22:29.740" level="INFO">Typing text 'Marcin' into text field 'id=exampleInputEmail2'</msg>
+<status status="PASS" endtime="20171002 14:22:29.838" starttime="20171002 14:22:29.740"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>id=exampleInputPassword2</arg>
+<arg>${password}</arg>
+</arguments>
+<msg timestamp="20171002 14:22:29.838" level="INFO">Typing text 'Qwerty12!' into text field 'id=exampleInputPassword2'</msg>
+<status status="PASS" endtime="20171002 14:22:29.926" starttime="20171002 14:22:29.838"></status>
+</kw>
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>css=body &gt; div.col-12.col-md-10.col-xl-8.py-md-3.pl-md-5.bd-content.ng-scope &gt; div.col-md-offset-4.ng-scope &gt; form &gt; button</arg>
+</arguments>
+<msg timestamp="20171002 14:22:29.926" level="INFO">Clicking button 'css=body &gt; div.col-12.col-md-10.col-xl-8.py-md-3.pl-md-5.bd-content.ng-scope &gt; div.col-md-offset-4.ng-scope &gt; form &gt; button'.</msg>
+<status status="PASS" endtime="20171002 14:22:30.006" starttime="20171002 14:22:29.926"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>0.1</arg>
+</arguments>
+<msg timestamp="20171002 14:22:30.107" level="INFO">Slept 100 milliseconds</msg>
+<status status="PASS" endtime="20171002 14:22:30.107" starttime="20171002 14:22:30.006"></status>
+</kw>
+<status status="PASS" endtime="20171002 14:22:30.107" starttime="20171002 14:22:29.739"></status>
+</kw>
+<status status="PASS" endtime="20171002 14:22:30.107" starttime="20171002 14:22:29.739"></status>
+</kw>
+<kw name="Open Location Employees" library="test_resource_employees">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>css=#bs-example-navbar-collapse-1 &gt; ul &gt; li:nth-child(2) &gt; a</arg>
+</arguments>
+<msg timestamp="20171002 14:22:30.108" level="INFO">Clicking element 'css=#bs-example-navbar-collapse-1 &gt; ul &gt; li:nth-child(2) &gt; a'.</msg>
+<status status="PASS" endtime="20171002 14:22:30.184" starttime="20171002 14:22:30.107"></status>
+</kw>
+<kw name="Location Should Be" library="Selenium2Library">
+<doc>Verifies that current URL is exactly `url`.</doc>
+<arguments>
+<arg>${SERVER}/#!/Employee</arg>
+</arguments>
+<msg timestamp="20171002 14:22:30.216" level="INFO">Current location is 'http://127.0.0.1:8080/#!/Employee'.</msg>
+<status status="PASS" endtime="20171002 14:22:30.217" starttime="20171002 14:22:30.184"></status>
+</kw>
+<status status="PASS" endtime="20171002 14:22:30.217" starttime="20171002 14:22:30.107"></status>
+</kw>
+<kw type="for" name="${x} IN RANGE [ 1 | 3 ]">
+<kw type="foritem" name="${x} = 1">
+<kw name="Add New Employee" library="test_resource_employees">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>css=body &gt; div.col-12.col-md-10.col-xl-8.py-md-3.pl-md-5.bd-content.ng-scope &gt; div.col-sm-10.center-block.border-container.ng-scope &gt; div.row &gt; div.col-sm-2.col-xs-7 &gt; button</arg>
+</arguments>
+<msg timestamp="20171002 14:22:30.218" level="INFO">Clicking element 'css=body &gt; div.col-12.col-md-10.col-xl-8.py-md-3.pl-md-5.bd-content.ng-scope &gt; div.col-sm-10.center-block.border-container.ng-scope &gt; div.row &gt; div.col-sm-2.col-xs-7 &gt; button'.</msg>
+<status status="PASS" endtime="20171002 14:22:30.309" starttime="20171002 14:22:30.218"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<doc>Waits until element specified with `locator` is visible.</doc>
+<arguments>
+<arg>css=#myModal</arg>
+</arguments>
+<status status="PASS" endtime="20171002 14:22:30.565" starttime="20171002 14:22:30.310"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>css=#myModal &gt; div &gt; div &gt; div.modal-body &gt; div &gt; input:nth-child(3)</arg>
+<arg>Kamil</arg>
+</arguments>
+<msg timestamp="20171002 14:22:30.565" level="INFO">Typing text 'Kamil' into text field 'css=#myModal &gt; div &gt; div &gt; div.modal-body &gt; div &gt; input:nth-child(3)'</msg>
+<status status="PASS" endtime="20171002 14:22:30.673" starttime="20171002 14:22:30.565"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>css=#myModal &gt; div &gt; div &gt; div.modal-body &gt; div &gt; input:nth-child(5)</arg>
+<arg>Dlug</arg>
+</arguments>
+<msg timestamp="20171002 14:22:30.673" level="INFO">Typing text 'Dlug' into text field 'css=#myModal &gt; div &gt; div &gt; div.modal-body &gt; div &gt; input:nth-child(5)'</msg>
+<status status="PASS" endtime="20171002 14:22:30.770" starttime="20171002 14:22:30.673"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>css=#myModal &gt; div &gt; div &gt; div.modal-body &gt; div &gt; input:nth-child(7)</arg>
+<arg>net</arg>
+</arguments>
+<msg timestamp="20171002 14:22:30.770" level="INFO">Typing text 'net' into text field 'css=#myModal &gt; div &gt; div &gt; div.modal-body &gt; div &gt; input:nth-child(7)'</msg>
+<status status="PASS" endtime="20171002 14:22:30.894" starttime="20171002 14:22:30.770"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>css=#myModal &gt; div &gt; div &gt; div.modal-body &gt; div &gt; input:nth-child(9)</arg>
+<arg>dev</arg>
+</arguments>
+<msg timestamp="20171002 14:22:30.894" level="INFO">Typing text 'dev' into text field 'css=#myModal &gt; div &gt; div &gt; div.modal-body &gt; div &gt; input:nth-child(9)'</msg>
+<status status="PASS" endtime="20171002 14:22:30.996" starttime="20171002 14:22:30.894"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>css=#myModal &gt; div &gt; div &gt; div.modal-body &gt; div &gt; input:nth-child(11)</arg>
+<arg>1</arg>
+</arguments>
+<msg timestamp="20171002 14:22:30.997" level="INFO">Typing text '1' into text field 'css=#myModal &gt; div &gt; div &gt; div.modal-body &gt; div &gt; input:nth-child(11)'</msg>
+<status status="PASS" endtime="20171002 14:22:31.092" starttime="20171002 14:22:30.997"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>css=#myModal &gt; div &gt; div &gt; div.modal-footer &gt; button.btn.btn-primary.btn-default</arg>
+</arguments>
+<msg timestamp="20171002 14:22:31.093" level="INFO">Clicking element 'css=#myModal &gt; div &gt; div &gt; div.modal-footer &gt; button.btn.btn-primary.btn-default'.</msg>
+<status status="PASS" endtime="20171002 14:22:31.175" starttime="20171002 14:22:31.092"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>0.3</arg>
+</arguments>
+<msg timestamp="20171002 14:22:31.476" level="INFO">Slept 300 milliseconds</msg>
+<status status="PASS" endtime="20171002 14:22:31.476" starttime="20171002 14:22:31.176"></status>
+</kw>
+<status status="PASS" endtime="20171002 14:22:31.476" starttime="20171002 14:22:30.217"></status>
+</kw>
+<status status="PASS" endtime="20171002 14:22:31.476" starttime="20171002 14:22:30.217"></status>
+</kw>
+<kw type="foritem" name="${x} = 2">
+<kw name="Add New Employee" library="test_resource_employees">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>css=body &gt; div.col-12.col-md-10.col-xl-8.py-md-3.pl-md-5.bd-content.ng-scope &gt; div.col-sm-10.center-block.border-container.ng-scope &gt; div.row &gt; div.col-sm-2.col-xs-7 &gt; button</arg>
+</arguments>
+<msg timestamp="20171002 14:22:31.477" level="INFO">Clicking element 'css=body &gt; div.col-12.col-md-10.col-xl-8.py-md-3.pl-md-5.bd-content.ng-scope &gt; div.col-sm-10.center-block.border-container.ng-scope &gt; div.row &gt; div.col-sm-2.col-xs-7 &gt; button'.</msg>
+<status status="PASS" endtime="20171002 14:22:31.531" starttime="20171002 14:22:31.477"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<doc>Waits until element specified with `locator` is visible.</doc>
+<arguments>
+<arg>css=#myModal</arg>
+</arguments>
+<status status="PASS" endtime="20171002 14:22:31.780" starttime="20171002 14:22:31.531"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>css=#myModal &gt; div &gt; div &gt; div.modal-body &gt; div &gt; input:nth-child(3)</arg>
+<arg>Kamil</arg>
+</arguments>
+<msg timestamp="20171002 14:22:31.780" level="INFO">Typing text 'Kamil' into text field 'css=#myModal &gt; div &gt; div &gt; div.modal-body &gt; div &gt; input:nth-child(3)'</msg>
+<status status="PASS" endtime="20171002 14:22:31.849" starttime="20171002 14:22:31.780"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>css=#myModal &gt; div &gt; div &gt; div.modal-body &gt; div &gt; input:nth-child(5)</arg>
+<arg>Dlug</arg>
+</arguments>
+<msg timestamp="20171002 14:22:31.850" level="INFO">Typing text 'Dlug' into text field 'css=#myModal &gt; div &gt; div &gt; div.modal-body &gt; div &gt; input:nth-child(5)'</msg>
+<status status="PASS" endtime="20171002 14:22:31.908" starttime="20171002 14:22:31.849"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>css=#myModal &gt; div &gt; div &gt; div.modal-body &gt; div &gt; input:nth-child(7)</arg>
+<arg>net</arg>
+</arguments>
+<msg timestamp="20171002 14:22:31.908" level="INFO">Typing text 'net' into text field 'css=#myModal &gt; div &gt; div &gt; div.modal-body &gt; div &gt; input:nth-child(7)'</msg>
+<status status="PASS" endtime="20171002 14:22:31.961" starttime="20171002 14:22:31.908"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>css=#myModal &gt; div &gt; div &gt; div.modal-body &gt; div &gt; input:nth-child(9)</arg>
+<arg>dev</arg>
+</arguments>
+<msg timestamp="20171002 14:22:31.961" level="INFO">Typing text 'dev' into text field 'css=#myModal &gt; div &gt; div &gt; div.modal-body &gt; div &gt; input:nth-child(9)'</msg>
+<status status="PASS" endtime="20171002 14:22:32.024" starttime="20171002 14:22:31.961"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>css=#myModal &gt; div &gt; div &gt; div.modal-body &gt; div &gt; input:nth-child(11)</arg>
+<arg>1</arg>
+</arguments>
+<msg timestamp="20171002 14:22:32.024" level="INFO">Typing text '1' into text field 'css=#myModal &gt; div &gt; div &gt; div.modal-body &gt; div &gt; input:nth-child(11)'</msg>
+<status status="PASS" endtime="20171002 14:22:32.070" starttime="20171002 14:22:32.024"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>css=#myModal &gt; div &gt; div &gt; div.modal-footer &gt; button.btn.btn-primary.btn-default</arg>
+</arguments>
+<msg timestamp="20171002 14:22:32.071" level="INFO">Clicking element 'css=#myModal &gt; div &gt; div &gt; div.modal-footer &gt; button.btn.btn-primary.btn-default'.</msg>
+<status status="PASS" endtime="20171002 14:22:32.110" starttime="20171002 14:22:32.071"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>0.3</arg>
+</arguments>
+<msg timestamp="20171002 14:22:32.410" level="INFO">Slept 300 milliseconds</msg>
+<status status="PASS" endtime="20171002 14:22:32.410" starttime="20171002 14:22:32.110"></status>
+</kw>
+<status status="PASS" endtime="20171002 14:22:32.410" starttime="20171002 14:22:31.476"></status>
+</kw>
+<status status="PASS" endtime="20171002 14:22:32.410" starttime="20171002 14:22:31.476"></status>
+</kw>
+<status status="PASS" endtime="20171002 14:22:32.410" starttime="20171002 14:22:30.217"></status>
+</kw>
+<kw type="for" name="${Q} IN RANGE [ 1 | 3 ]">
+<kw type="foritem" name="${Q} = 1">
+<kw name="Delete New Employee" library="test_resource_employees">
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>css=body &gt; div.col-12.col-md-10.col-xl-8.py-md-3.pl-md-5.bd-content.ng-scope &gt; div.col-sm-10.center-block.border-container.ng-scope &gt; div.table-responsive.center-block.col-xs-12 &gt; table &gt; tbody &gt; tr &gt; td:nth-child(6) &gt; button</arg>
+</arguments>
+<msg timestamp="20171002 14:22:32.411" level="INFO">Clicking button 'css=body &gt; div.col-12.col-md-10.col-xl-8.py-md-3.pl-md-5.bd-content.ng-scope &gt; div.col-sm-10.center-block.border-container.ng-scope &gt; div.table-responsive.center-block.col-xs-12 &gt; table &gt; tbody &gt; tr &gt; td:nth-child(6) &gt; button'.</msg>
+<status status="PASS" endtime="20171002 14:22:32.537" starttime="20171002 14:22:32.411"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<doc>Waits until element specified with `locator` is visible.</doc>
+<arguments>
+<arg>css=#confirmDelete</arg>
+</arguments>
+<status status="PASS" endtime="20171002 14:22:32.797" starttime="20171002 14:22:32.537"></status>
+</kw>
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>css=#confirmDelete &gt; div &gt; div &gt; div.modal-footer &gt; button.btn.btn-primary.btn-default</arg>
+</arguments>
+<msg timestamp="20171002 14:22:32.797" level="INFO">Clicking button 'css=#confirmDelete &gt; div &gt; div &gt; div.modal-footer &gt; button.btn.btn-primary.btn-default'.</msg>
+<status status="PASS" endtime="20171002 14:22:32.894" starttime="20171002 14:22:32.797"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>0.3</arg>
+</arguments>
+<msg timestamp="20171002 14:22:33.194" level="INFO">Slept 300 milliseconds</msg>
+<status status="PASS" endtime="20171002 14:22:33.194" starttime="20171002 14:22:32.894"></status>
+</kw>
+<status status="PASS" endtime="20171002 14:22:33.194" starttime="20171002 14:22:32.410"></status>
+</kw>
+<status status="PASS" endtime="20171002 14:22:33.194" starttime="20171002 14:22:32.410"></status>
+</kw>
+<kw type="foritem" name="${Q} = 2">
+<kw name="Delete New Employee" library="test_resource_employees">
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>css=body &gt; div.col-12.col-md-10.col-xl-8.py-md-3.pl-md-5.bd-content.ng-scope &gt; div.col-sm-10.center-block.border-container.ng-scope &gt; div.table-responsive.center-block.col-xs-12 &gt; table &gt; tbody &gt; tr &gt; td:nth-child(6) &gt; button</arg>
+</arguments>
+<msg timestamp="20171002 14:22:33.195" level="INFO">Clicking button 'css=body &gt; div.col-12.col-md-10.col-xl-8.py-md-3.pl-md-5.bd-content.ng-scope &gt; div.col-sm-10.center-block.border-container.ng-scope &gt; div.table-responsive.center-block.col-xs-12 &gt; table &gt; tbody &gt; tr &gt; td:nth-child(6) &gt; button'.</msg>
+<status status="PASS" endtime="20171002 14:22:33.284" starttime="20171002 14:22:33.194"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<doc>Waits until element specified with `locator` is visible.</doc>
+<arguments>
+<arg>css=#confirmDelete</arg>
+</arguments>
+<status status="PASS" endtime="20171002 14:22:33.529" starttime="20171002 14:22:33.284"></status>
+</kw>
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>css=#confirmDelete &gt; div &gt; div &gt; div.modal-footer &gt; button.btn.btn-primary.btn-default</arg>
+</arguments>
+<msg timestamp="20171002 14:22:33.529" level="INFO">Clicking button 'css=#confirmDelete &gt; div &gt; div &gt; div.modal-footer &gt; button.btn.btn-primary.btn-default'.</msg>
+<status status="PASS" endtime="20171002 14:22:33.610" starttime="20171002 14:22:33.529"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>0.3</arg>
+</arguments>
+<msg timestamp="20171002 14:22:33.910" level="INFO">Slept 300 milliseconds</msg>
+<status status="PASS" endtime="20171002 14:22:33.910" starttime="20171002 14:22:33.610"></status>
+</kw>
+<status status="PASS" endtime="20171002 14:22:33.910" starttime="20171002 14:22:33.194"></status>
+</kw>
+<status status="PASS" endtime="20171002 14:22:33.910" starttime="20171002 14:22:33.194"></status>
+</kw>
+<status status="PASS" endtime="20171002 14:22:33.910" starttime="20171002 14:22:32.410"></status>
+</kw>
+<kw name="Update Employee" library="test_resource_employees">
+<arguments>
+<arg>Dlug</arg>
+</arguments>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>css=body &gt; div.col-12.col-md-10.col-xl-8.py-md-3.pl-md-5.bd-content.ng-scope &gt; div.col-sm-10.center-block.border-container.ng-scope &gt; div.table-responsive.center-block.col-xs-12 &gt; table &gt; tbody &gt; tr &gt; td:nth-child(7) &gt; button</arg>
+</arguments>
+<msg timestamp="20171002 14:22:33.911" level="INFO">Clicking element 'css=body &gt; div.col-12.col-md-10.col-xl-8.py-md-3.pl-md-5.bd-content.ng-scope &gt; div.col-sm-10.center-block.border-container.ng-scope &gt; div.table-responsive.center-block.col-xs-12 &gt; table &gt; tbody &gt; tr &gt; td:nth-child(7) &gt; button'.</msg>
+<status status="PASS" endtime="20171002 14:22:33.989" starttime="20171002 14:22:33.910"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1</arg>
+</arguments>
+<msg timestamp="20171002 14:22:35.001" level="INFO">Slept 1 second</msg>
+<status status="PASS" endtime="20171002 14:22:35.001" starttime="20171002 14:22:33.989"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//*[@id="myModalUpdate"]/div/div/div[1]/div/input[3]</arg>
+<arg>${surname}</arg>
+</arguments>
+<msg timestamp="20171002 14:22:35.001" level="INFO">Typing text 'Dlug' into text field 'xpath=//*[@id="myModalUpdate"]/div/div/div[1]/div/input[3]'</msg>
+<status status="PASS" endtime="20171002 14:22:35.131" starttime="20171002 14:22:35.001"></status>
+</kw>
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>css=#myModalUpdate &gt; div &gt; div &gt; div.modal-footer &gt; button.btn.btn-primary.btn-default</arg>
+</arguments>
+<msg timestamp="20171002 14:22:35.131" level="INFO">Clicking button 'css=#myModalUpdate &gt; div &gt; div &gt; div.modal-footer &gt; button.btn.btn-primary.btn-default'.</msg>
+<status status="PASS" endtime="20171002 14:22:35.246" starttime="20171002 14:22:35.131"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>0.3</arg>
+</arguments>
+<msg timestamp="20171002 14:22:35.546" level="INFO">Slept 300 milliseconds</msg>
+<status status="PASS" endtime="20171002 14:22:35.546" starttime="20171002 14:22:35.246"></status>
+</kw>
+<status status="PASS" endtime="20171002 14:22:35.546" starttime="20171002 14:22:33.910"></status>
+</kw>
+<kw name="Update Employee" library="test_resource_employees">
+<arguments>
+<arg>Clinton</arg>
+</arguments>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>css=body &gt; div.col-12.col-md-10.col-xl-8.py-md-3.pl-md-5.bd-content.ng-scope &gt; div.col-sm-10.center-block.border-container.ng-scope &gt; div.table-responsive.center-block.col-xs-12 &gt; table &gt; tbody &gt; tr &gt; td:nth-child(7) &gt; button</arg>
+</arguments>
+<msg timestamp="20171002 14:22:35.547" level="INFO">Clicking element 'css=body &gt; div.col-12.col-md-10.col-xl-8.py-md-3.pl-md-5.bd-content.ng-scope &gt; div.col-sm-10.center-block.border-container.ng-scope &gt; div.table-responsive.center-block.col-xs-12 &gt; table &gt; tbody &gt; tr &gt; td:nth-child(7) &gt; button'.</msg>
+<status status="PASS" endtime="20171002 14:22:35.619" starttime="20171002 14:22:35.546"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1</arg>
+</arguments>
+<msg timestamp="20171002 14:22:36.620" level="INFO">Slept 1 second</msg>
+<status status="PASS" endtime="20171002 14:22:36.620" starttime="20171002 14:22:35.619"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//*[@id="myModalUpdate"]/div/div/div[1]/div/input[3]</arg>
+<arg>${surname}</arg>
+</arguments>
+<msg timestamp="20171002 14:22:36.620" level="INFO">Typing text 'Clinton' into text field 'xpath=//*[@id="myModalUpdate"]/div/div/div[1]/div/input[3]'</msg>
+<status status="PASS" endtime="20171002 14:22:36.712" starttime="20171002 14:22:36.620"></status>
+</kw>
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>css=#myModalUpdate &gt; div &gt; div &gt; div.modal-footer &gt; button.btn.btn-primary.btn-default</arg>
+</arguments>
+<msg timestamp="20171002 14:22:36.712" level="INFO">Clicking button 'css=#myModalUpdate &gt; div &gt; div &gt; div.modal-footer &gt; button.btn.btn-primary.btn-default'.</msg>
+<status status="PASS" endtime="20171002 14:22:36.764" starttime="20171002 14:22:36.712"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>0.3</arg>
+</arguments>
+<msg timestamp="20171002 14:22:37.064" level="INFO">Slept 300 milliseconds</msg>
+<status status="PASS" endtime="20171002 14:22:37.064" starttime="20171002 14:22:36.764"></status>
+</kw>
+<status status="PASS" endtime="20171002 14:22:37.065" starttime="20171002 14:22:35.546"></status>
+</kw>
+<status status="PASS" endtime="20171002 14:22:37.065" starttime="20171002 14:22:29.739"></status>
+</kw>
+<status status="PASS" endtime="20171002 14:22:37.066" critical="yes" starttime="20171002 14:22:29.738"></status>
+</test>
+<test id="s1-t5" name="Test Resource Projects">
+<kw name="Test Resource Projects" library="test_resource_projects">
+<kw name="Create List" library="BuiltIn">
+<doc>Returns a list containing given items.</doc>
+<arguments>
+<arg>project1</arg>
+<arg>project2</arg>
+<arg>project3</arg>
+<arg>project4</arg>
+</arguments>
+<assign>
+<var>${projectNames}</var>
+</assign>
+<msg timestamp="20171002 14:22:37.078" level="INFO">${projectNames} = [u'project1', u'project2', u'project3', u'project4']</msg>
+<status status="PASS" endtime="20171002 14:22:37.078" starttime="20171002 14:22:37.077"></status>
+</kw>
+<kw name="Open Location Projects" library="test_resource_projects">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>css=#bs-example-navbar-collapse-1 &gt; ul &gt; li:nth-child(3) &gt; a</arg>
+</arguments>
+<msg timestamp="20171002 14:22:37.080" level="INFO">Clicking element 'css=#bs-example-navbar-collapse-1 &gt; ul &gt; li:nth-child(3) &gt; a'.</msg>
+<status status="PASS" endtime="20171002 14:22:37.191" starttime="20171002 14:22:37.079"></status>
+</kw>
+<kw name="Location Should Be" library="Selenium2Library">
+<doc>Verifies that current URL is exactly `url`.</doc>
+<arguments>
+<arg>${SERVER}/#!/Project</arg>
+</arguments>
+<msg timestamp="20171002 14:22:37.277" level="INFO">Current location is 'http://127.0.0.1:8080/#!/Project'.</msg>
+<status status="PASS" endtime="20171002 14:22:37.277" starttime="20171002 14:22:37.192"></status>
+</kw>
+<status status="PASS" endtime="20171002 14:22:37.277" starttime="20171002 14:22:37.078"></status>
+</kw>
+<kw type="for" name="${x} IN [ ${projectNames} ]">
+<kw type="foritem" name="${x} = [u'project1', u'project2', u'project3', u'project4']">
+<kw name="Add New Project" library="test_resource_projects">
+<arguments>
+<arg>${x}</arg>
+</arguments>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>css=body &gt; div.col-12.col-md-10.col-xl-8.py-md-3.pl-md-5.bd-content.ng-scope &gt; div.col-sm-10.center-block.border-container.ng-scope &gt; div.row &gt; div.col-sm-2.col-xs-7 &gt; button</arg>
+</arguments>
+<msg timestamp="20171002 14:22:37.278" level="INFO">Clicking element 'css=body &gt; div.col-12.col-md-10.col-xl-8.py-md-3.pl-md-5.bd-content.ng-scope &gt; div.col-sm-10.center-block.border-container.ng-scope &gt; div.row &gt; div.col-sm-2.col-xs-7 &gt; button'.</msg>
+<status status="PASS" endtime="20171002 14:22:37.364" starttime="20171002 14:22:37.278"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<doc>Waits until element specified with `locator` is visible.</doc>
+<arguments>
+<arg>css=#myModalAdd</arg>
+</arguments>
+<status status="PASS" endtime="20171002 14:22:37.621" starttime="20171002 14:22:37.364"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>css=#myModalAdd &gt; div &gt; div &gt; div.modal-body &gt; div &gt; input:nth-child(3)</arg>
+<arg>${projectName}</arg>
+</arguments>
+<msg timestamp="20171002 14:22:37.622" level="INFO">Typing text '[u'project1', u'project2', u'project3', u'project4']' into text field 'css=#myModalAdd &gt; div &gt; div &gt; div.modal-body &gt; div &gt; input:nth-child(3)'</msg>
+<status status="PASS" endtime="20171002 14:22:37.866" starttime="20171002 14:22:37.622"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>css=#myModalAdd &gt; div &gt; div &gt; div.modal-body &gt; div &gt; input:nth-child(5)</arg>
+<arg>new project for test you see what i told you</arg>
+</arguments>
+<msg timestamp="20171002 14:22:37.867" level="INFO">Typing text 'new project for test you see what i told you' into text field 'css=#myModalAdd &gt; div &gt; div &gt; div.modal-body &gt; div &gt; input:nth-child(5)'</msg>
+<status status="PASS" endtime="20171002 14:22:38.157" starttime="20171002 14:22:37.867"></status>
+</kw>
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>css=#myModalAdd &gt; div &gt; div &gt; div &gt; div &gt; div.modal-footer &gt; button.btn.btn-primary.btn-default</arg>
+</arguments>
+<msg timestamp="20171002 14:22:38.158" level="INFO">Clicking button 'css=#myModalAdd &gt; div &gt; div &gt; div &gt; div &gt; div.modal-footer &gt; button.btn.btn-primary.btn-default'.</msg>
+<status status="PASS" endtime="20171002 14:22:38.238" starttime="20171002 14:22:38.157"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>0.3</arg>
+</arguments>
+<msg timestamp="20171002 14:22:38.538" level="INFO">Slept 300 milliseconds</msg>
+<status status="PASS" endtime="20171002 14:22:38.538" starttime="20171002 14:22:38.238"></status>
+</kw>
+<status status="PASS" endtime="20171002 14:22:38.538" starttime="20171002 14:22:37.277"></status>
+</kw>
+<status status="PASS" endtime="20171002 14:22:38.538" starttime="20171002 14:22:37.277"></status>
+</kw>
+<status status="PASS" endtime="20171002 14:22:38.538" starttime="20171002 14:22:37.277"></status>
+</kw>
+<kw type="for" name="${x} IN RANGE [ 1 | 2 ]">
+<kw type="foritem" name="${x} = 1">
+<kw name="Delete New Project" library="test_resource_projects">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>0.5</arg>
+</arguments>
+<msg timestamp="20171002 14:22:39.041" level="INFO">Slept 500 milliseconds</msg>
+<status status="PASS" endtime="20171002 14:22:39.041" starttime="20171002 14:22:38.540"></status>
+</kw>
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>css=body &gt; div.col-12.col-md-10.col-xl-8.py-md-3.pl-md-5.bd-content.ng-scope &gt; div.col-sm-10.center-block.border-container.ng-scope &gt; div.table-responsive.center-block.col-xs-11 &gt; table &gt; tbody &gt; tr:nth-child(1) &gt; td:nth-child(4) &gt; button</arg>
+</arguments>
+<msg timestamp="20171002 14:22:39.041" level="INFO">Clicking button 'css=body &gt; div.col-12.col-md-10.col-xl-8.py-md-3.pl-md-5.bd-content.ng-scope &gt; div.col-sm-10.center-block.border-container.ng-scope &gt; div.table-responsive.center-block.col-xs-11 &gt; table &gt; tbody &gt; tr:nth-child(1) &gt; td:nth-child(4) &gt; button'.</msg>
+<status status="PASS" endtime="20171002 14:22:39.149" starttime="20171002 14:22:39.041"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<doc>Waits until element specified with `locator` is visible.</doc>
+<arguments>
+<arg>css=#confirmDelete &gt; div &gt; div &gt; div.modal-footer &gt; button.btn.btn-primary.btn-default</arg>
+</arguments>
+<status status="PASS" endtime="20171002 14:22:39.391" starttime="20171002 14:22:39.150"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>0.3</arg>
+</arguments>
+<msg timestamp="20171002 14:22:39.703" level="INFO">Slept 300 milliseconds</msg>
+<status status="PASS" endtime="20171002 14:22:39.703" starttime="20171002 14:22:39.391"></status>
+</kw>
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>css=#confirmDelete &gt; div &gt; div &gt; div.modal-footer &gt; button.btn.btn-primary.btn-default</arg>
+</arguments>
+<msg timestamp="20171002 14:22:39.703" level="INFO">Clicking button 'css=#confirmDelete &gt; div &gt; div &gt; div.modal-footer &gt; button.btn.btn-primary.btn-default'.</msg>
+<status status="PASS" endtime="20171002 14:22:39.820" starttime="20171002 14:22:39.703"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>0.3</arg>
+</arguments>
+<msg timestamp="20171002 14:22:40.122" level="INFO">Slept 300 milliseconds</msg>
+<status status="PASS" endtime="20171002 14:22:40.122" starttime="20171002 14:22:39.821"></status>
+</kw>
+<status status="PASS" endtime="20171002 14:22:40.123" starttime="20171002 14:22:38.539"></status>
+</kw>
+<status status="PASS" endtime="20171002 14:22:40.123" starttime="20171002 14:22:38.539"></status>
+</kw>
+<status status="PASS" endtime="20171002 14:22:40.123" starttime="20171002 14:22:38.538"></status>
+</kw>
+<kw name="Update Project" library="test_resource_projects">
+<arguments>
+<arg>things</arg>
+</arguments>
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>css=body &gt; div.col-12.col-md-10.col-xl-8.py-md-3.pl-md-5.bd-content.ng-scope &gt; div.col-sm-10.center-block.border-container.ng-scope &gt; div.table-responsive.center-block.col-xs-11 &gt; table &gt; tbody &gt; tr:nth-child(1) &gt; td:nth-child(5) &gt; button</arg>
+</arguments>
+<msg timestamp="20171002 14:22:40.127" level="INFO">Clicking button 'css=body &gt; div.col-12.col-md-10.col-xl-8.py-md-3.pl-md-5.bd-content.ng-scope &gt; div.col-sm-10.center-block.border-container.ng-scope &gt; div.table-responsive.center-block.col-xs-11 &gt; table &gt; tbody &gt; tr:nth-child(1) &gt; td:nth-child(5) &gt; button'.</msg>
+<status status="PASS" endtime="20171002 14:22:40.247" starttime="20171002 14:22:40.126"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<doc>Waits until element specified with `locator` is visible.</doc>
+<arguments>
+<arg>css=#myModalUpdate</arg>
+</arguments>
+<status status="PASS" endtime="20171002 14:22:40.502" starttime="20171002 14:22:40.248"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>//*[@id="myModalUpdate"]/div/div/div/div/input[3]</arg>
+<arg>${name}</arg>
+</arguments>
+<msg timestamp="20171002 14:22:40.502" level="INFO">Typing text 'things' into text field '//*[@id="myModalUpdate"]/div/div/div/div/input[3]'</msg>
+<status status="PASS" endtime="20171002 14:22:40.622" starttime="20171002 14:22:40.502"></status>
+</kw>
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>css=#myModalUpdate &gt; div &gt; div &gt; div &gt; div &gt; div.modal-footer &gt; button.btn.btn-primary.btn-default</arg>
+</arguments>
+<msg timestamp="20171002 14:22:40.623" level="INFO">Clicking button 'css=#myModalUpdate &gt; div &gt; div &gt; div &gt; div &gt; div.modal-footer &gt; button.btn.btn-primary.btn-default'.</msg>
+<status status="PASS" endtime="20171002 14:22:40.737" starttime="20171002 14:22:40.623"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>0.3</arg>
+</arguments>
+<msg timestamp="20171002 14:22:41.037" level="INFO">Slept 300 milliseconds</msg>
+<status status="PASS" endtime="20171002 14:22:41.037" starttime="20171002 14:22:40.737"></status>
+</kw>
+<status status="PASS" endtime="20171002 14:22:41.038" starttime="20171002 14:22:40.124"></status>
+</kw>
+<kw name="Update Project" library="test_resource_projects">
+<arguments>
+<arg>something things</arg>
+</arguments>
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>css=body &gt; div.col-12.col-md-10.col-xl-8.py-md-3.pl-md-5.bd-content.ng-scope &gt; div.col-sm-10.center-block.border-container.ng-scope &gt; div.table-responsive.center-block.col-xs-11 &gt; table &gt; tbody &gt; tr:nth-child(1) &gt; td:nth-child(5) &gt; button</arg>
+</arguments>
+<msg timestamp="20171002 14:22:41.043" level="INFO">Clicking button 'css=body &gt; div.col-12.col-md-10.col-xl-8.py-md-3.pl-md-5.bd-content.ng-scope &gt; div.col-sm-10.center-block.border-container.ng-scope &gt; div.table-responsive.center-block.col-xs-11 &gt; table &gt; tbody &gt; tr:nth-child(1) &gt; td:nth-child(5) &gt; button'.</msg>
+<status status="PASS" endtime="20171002 14:22:41.142" starttime="20171002 14:22:41.041"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<doc>Waits until element specified with `locator` is visible.</doc>
+<arguments>
+<arg>css=#myModalUpdate</arg>
+</arguments>
+<status status="PASS" endtime="20171002 14:22:41.381" starttime="20171002 14:22:41.142"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>//*[@id="myModalUpdate"]/div/div/div/div/input[3]</arg>
+<arg>${name}</arg>
+</arguments>
+<msg timestamp="20171002 14:22:41.382" level="INFO">Typing text 'something things' into text field '//*[@id="myModalUpdate"]/div/div/div/div/input[3]'</msg>
+<status status="PASS" endtime="20171002 14:22:41.513" starttime="20171002 14:22:41.381"></status>
+</kw>
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>css=#myModalUpdate &gt; div &gt; div &gt; div &gt; div &gt; div.modal-footer &gt; button.btn.btn-primary.btn-default</arg>
+</arguments>
+<msg timestamp="20171002 14:22:41.514" level="INFO">Clicking button 'css=#myModalUpdate &gt; div &gt; div &gt; div &gt; div &gt; div.modal-footer &gt; button.btn.btn-primary.btn-default'.</msg>
+<status status="PASS" endtime="20171002 14:22:41.583" starttime="20171002 14:22:41.514"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>0.3</arg>
+</arguments>
+<msg timestamp="20171002 14:22:41.884" level="INFO">Slept 300 milliseconds</msg>
+<status status="PASS" endtime="20171002 14:22:41.884" starttime="20171002 14:22:41.583"></status>
+</kw>
+<status status="PASS" endtime="20171002 14:22:41.884" starttime="20171002 14:22:41.039"></status>
+</kw>
+<status status="PASS" endtime="20171002 14:22:41.884" starttime="20171002 14:22:37.075"></status>
+</kw>
+<status status="PASS" endtime="20171002 14:22:41.885" critical="yes" starttime="20171002 14:22:37.072"></status>
 </test>
 <doc>Main test program of this page</doc>
-<status status="FAIL" endtime="20170919 12:32:22.345" starttime="20170919 12:32:16.153"></status>
+<status status="PASS" endtime="20171002 14:22:41.887" starttime="20171002 14:22:22.743"></status>
 </suite>
 <statistics>
 <total>
-<stat fail="1" pass="3">Critical Tests</stat>
-<stat fail="1" pass="3">All Tests</stat>
+<stat fail="0" pass="5">Critical Tests</stat>
+<stat fail="0" pass="5">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat fail="1" id="s1" name="Test site" pass="3">Test site</stat>
+<stat fail="0" id="s1" name="Test site" pass="5">Test site</stat>
 </suite>
 </statistics>
 <errors>
-<msg timestamp="20170919 12:32:16.269" level="ERROR">Error in file 'C:\Users\Hehesz\PycharmProjects\untitled\billennium_resources\Test_site.robot': Unsupported file format ''.</msg>
 </errors>
 </robot>

@@ -3,19 +3,20 @@ Documentation  Main test program checking login page
 
 Library  Selenium2Library
 Resource  resources.robot
+Suite Teardown  Close browser
+
+*** Test Cases ***
+Test Valid Login
+    Open Browser and valid test
+    Logout from site
 
 *** Keywords ***
-Test Valid Login
-    Open Browser And Valid Test
-    Logout From Site
-
 Open Browser And Valid Test
-#    Open Browser To Login Page
-    Login Page Should Be Open
-    Login Site  Marcin  Qwerty12!
-    Sleep  0.1
-    Timesheet Location Should Be Open
+    Open browser to login page
+    Login page should be open
+    Login to site
+    Timesheet location should be open
 
 Logout From Site
     Logout
-    Signin Location Should Be Open
+    Signin location should be open

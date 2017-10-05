@@ -3,26 +3,24 @@ Documentation  Test login on unvalidate data
 
 Library  Selenium2Library
 Resource  resources.robot
+Suite Teardown  Close browser
+
+*** Test Cases ***
+Test Unvalid Logins
+    Open browser to login page
+    Input invalid both
+    Input invalid password
+    Input invalid username
 
 *** Keywords ***
-Test Unvalid Logins
-#    Open Browser To Invalid Test
-    Input Invalid Both
-    Input Invalid Password
-    Input Invalid Username
-
-Open Browser To Invalid Test
-    Open Browser To Login Page
-    Login Page Should Be Open
-
 Input Invalid Both
-    Login Site  unvalid  unvalid
-    Signin Location Should Be Open
+    Login site  unvalid  unvalid
+    Signin location should be open
 
 Input Invalid Password
-    Login Site  Marcin  unvalid
-    Signin Location Should Be Open
+    Login site  Marcin  unvalid
+    Signin location should be open
 
 Input Invalid Username
-    Login Site  unvalid  Qwerty12!
-    Signin Location Should Be Open
+    Login site  unvalid  Qwerty12!
+    Signin location should be open
